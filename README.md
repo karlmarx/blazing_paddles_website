@@ -1,2 +1,3 @@
 # blazing_paddles_website
-New BP website
+
+Working prototype for new bp website
