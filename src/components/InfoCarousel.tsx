@@ -8,16 +8,18 @@ import nishPic from "../assets/images/nishPic.jpg";
 
 export default function  InfoCarousel() {
     return (
-        <Carousel className="rounded-xl"
+        // <div className="!relative min-h-screen w-full  bg-cover bg-no-repeat">
+        //     <div className="absolute inset-0 h-screen w-full bg-gray-900/70" />
+        <Carousel className="rounded-xl h-screen"
                   // autoplay={true}
                   loop={true} autoplayDelay={3000}>
-            <div className="relative h-full w-full">
+            <div className=" h-full w-full">
                 <img
                     src={teamPic}
                     alt="teamPic"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full"
                 />
-                <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
+                <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70 ">
                     <div className="w-3/4 text-center md:w-2/4">
                         <Typography
                             variant="h1"
@@ -55,7 +57,7 @@ export default function  InfoCarousel() {
                         <Typography
                             variant="h1"
                             color="white"
-                            className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                            className="pt-10 mb-4 text-3xl md:text-4xl lg:text-5xl"
                         >
                             Dragonboat
                         </Typography>
@@ -67,7 +69,6 @@ export default function  InfoCarousel() {
                             Blazing Paddles sent out two crews for the 2021 Club Crew National Championships at Sarasota, Orlando in  October 1-3, 2021: Senior B and Senior C Small Boat.
                             Day 1 is 200m, the pirates both got a bronze medal! Day 2 is 500m where Senior C took home a bronze medal and Senior B had to do a re-run of the 500m and the pirates placed 3rd! Day 3 2000m where BP Senior C placed 3rd and BP Senior B in 5th place.
                             Congratulations to all the teams that participated and earned their berth for the to the 2022 IDBF Club Crew World Championships!
-                            *Photos below provided by the “United States Dragon Boat Federation" and "Suncoast Aquatic Nature Center Associates
                         </Typography>
                         <div className="flex  justify-center gap-2">
                             <Button size="lg" color="white">
@@ -186,5 +187,6 @@ export default function  InfoCarousel() {
                 </div>
             </div>
         </Carousel>
+        // </div>
     );
 }
